@@ -67,4 +67,39 @@ int main()
 	
 	
 	
+    ALGO TO FIND A FACTORIAL
+S1: Start
+S2: declare variables 
+S3: initialize variables- factorial <- 1
+		                  i <- 1
+S4: Read value of n
+S5: Repeat the steps until i = n
+	factorial = factorial * i
+	i = i + 1
+S6: Print factorial
+S7: Stop
+	
+	CODE
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int n, factorial, i;
+    factorial = 1;
+    cout << "Enter a positive integer \n";
+    cin >> n;
+    if (n < 0)
+    cout << "Error !";
+    else
+    {
+        for (i = 1; i <= n; i++)
+        factorial *= i;
+    }
+    cout << "Factorial of "<< n << " is " << factorial;
+    return 0;
+}
+	
+	
+	
 	
