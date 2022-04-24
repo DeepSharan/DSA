@@ -89,7 +89,7 @@ int main()
     factorial = 1;
     cout << "Enter a positive integer \n";
     cin >> n;
-    if (n < 0)
+    if (n <= 0)
     cout << "Error !";
     else
     {
