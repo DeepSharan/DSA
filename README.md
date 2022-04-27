@@ -67,4 +67,45 @@ int main()
 	
 	
 	
-	
+	ALGO TO CHECK WHETHER Number IS PRIME OR NOT
+S1 : Start
+S2 : initialize variables.
+S3 : Read the values.
+S4 : If n=0 || n=1 
+	Not a prime number
+S5 : Repeat the steps until i <= n/2
+		If (n % i == 0)
+		Not prime number
+		else Prime number
+S6 : Stop
+				   
+	CODE
+#include <iostream>
+using namespace std;
+int main()
+{
+    int i, n;
+    bool prime = true;
+    
+    cout << " Enter a number : ";
+    cin >> n ;
+    
+    if (n == 0 || n == 1)
+    {
+        cout << n <<" is not a Prime number.";
+    }
+    
+    for(i = 2; i <= n/2; i++ )
+    {
+        if (n % i == 0)
+        prime = false;
+    }
+    
+    if (prime)
+    cout <<n <<" is a Prime Number.";
+    else
+    cout <<n <<" is not a Prime Number.";
+    
+    return 0;
+}
+
